@@ -1,8 +1,5 @@
 ﻿namespace Module9.Task2
 {
-    /// <summary>
-    /// 
-    /// </summary>
     public static class Programm
     {
         public static void Main(string[] args)
