@@ -7,7 +7,6 @@
     {
         public static void Main(string[] args)
         {
-
             NumberSelect numberSelect = new NumberSelect();
             numberSelect.NumberSelectEvent += Names.NameSort;
 
