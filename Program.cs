@@ -8,18 +8,19 @@
             numberSelect.NumberSelectEvent += Names.NameSort;
 
             var arrayExceptions = new List<Exception>() { new FormatException(), new ArgumentOutOfRangeException() }; 
-            foreach (var item in arrayExceptions)
+            //foreach (var item in arrayExceptions)
             {
-                while(true)
+                bool bad = true;
+                while(bad)
                 {
                     try
                     {
                         numberSelect.Select();
-                        break;
+                        bad=false;
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(ex.Message);
+                        Console.WriteLine("Выбрано значение, отличное от 1 или 2");
                     };
                 }
             }
